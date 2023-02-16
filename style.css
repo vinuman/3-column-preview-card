@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color:  hsl(0, 0%, 95%);
+}
+
+
+.parent{
+    
+    max-width: 90rem;
+    min-height: 50rem;
+    margin:10% auto;
+    display: flex;
+}
+
+.parent > .child{
+    
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+
+img{
+    width:7rem;
+    height: 4rem;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3.5rem;
+    color:  hsl(0, 0%, 95%);
+}
+
+p{
+    font-size: 1.6rem;
+    width:80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.parent > .child > .child-content{
+    
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.one{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.two{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.one > button{
+    color: hsl(31, 77%, 52%);
+}
+.one > button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+}
+.two > button{
+    color: hsl(184, 100%, 22%);
+}
+.two > button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+}
+.three > button{
+    color:  hsl(179, 100%, 13%);
+}
+.three > button:hover{
+    background-color:  hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border:1px solid hsl(0, 0%, 95%);
+}
+
+button{
+    height:5rem;
+    width:15rem;
+    border-radius: 3rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:800px){
+    .parent{
+    
+      display: flex;
+      flex-direction: column;
+    }
+
+    .child{
+        max-width: 90%;
+        height: 100vh;
+        margin: 0 auto;
+        
+    }
+
+    .one{
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .three{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+
+
+}
